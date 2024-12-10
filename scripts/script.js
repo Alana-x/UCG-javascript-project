@@ -1,21 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Get references to all "add" buttons
     const buttons = [
-      { id: "add-orange", name: "Oranges" },
-      { id: "add-apple", name: "Apples" },
-      { id: "add-bananas", name: "Bananas" },
-      // ADD CODE FOR AVOCADOS HERE
+      { id: "add-axolotl", name: "Axolotl" },
+      { id: "add-cerberus", name: "Cerberus" },
+      { id: "add-kitsune", name: "Kitsune" },
+      { id: "add-dragon", name: "Dragon"},
     ];
-  
     // Reference to the cart body where items will be appended
     const cartBody = document.querySelector(".cart-body");
   
     // Reference to the subtotal and total elements
     const subtotalElement = document.getElementById("subtotal");
-    // ADD CODE FOR TOTAL
+    const totalElement = document.getElementById("total");
     
     let subtotal = 0;
-    // ADD CODE FOR TAX
+    const taxRate = 0.08517;
   
     // Function to update subtotal and total display
     function updateTotals() {
